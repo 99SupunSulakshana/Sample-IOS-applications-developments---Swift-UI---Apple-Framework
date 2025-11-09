@@ -33,8 +33,11 @@ struct FrameworkDetailView: View {
             Button{
                 isShowingSafriView = true
             } label: {
-                AFButton(title: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
+            //AFButton(title: "Learn More")
             }
+            .controlSize(.large)
+            .tint(.red)
         }
         .sheet(
             isPresented: $isShowingSafriView,
